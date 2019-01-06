@@ -21,4 +21,4 @@ RUN npm i -g hexo-cli \
     && npm i \
     && hexo generate -v
 
-CMD ["/root/.nvm/versions/node/v10.15.0/bin/hexo", "server", "-s"]
+CMD ["hexo", "server", "-s"]
