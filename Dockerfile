@@ -18,6 +18,7 @@ COPY ./blog /home/blog
 WORKDIR /home/blog
 
 RUN npm i -g hexo-cli \
+    npm i hexo --save \
     npm i \
     hexo generate
 
