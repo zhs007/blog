@@ -20,4 +20,4 @@ WORKDIR /home/blog
 RUN npm i -g hexo-cli \
     npm i 
 
-CMD ["hexo", "server", "-s"]
+CMD ["/root/.nvm/versions/node/v10.15.0/bin/hexo", "server", "-s"]
