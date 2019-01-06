@@ -19,6 +19,6 @@ WORKDIR /home/blog
 
 RUN npm i -g hexo-cli \
     && npm i \
-    && hexo generate -v
+    && hexo generate
 
 CMD ["hexo", "server", "-s"]
