@@ -18,6 +18,7 @@ COPY ./blog /home/blog
 WORKDIR /home/blog
 
 RUN npm i -g hexo-cli \
-    npm i 
+    npm i \
+    hexo generate
 
 CMD ["/root/.nvm/versions/node/v10.15.0/bin/hexo", "server", "-s"]
