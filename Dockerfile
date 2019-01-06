@@ -11,6 +11,7 @@ RUN source ~/.nvm/nvm.sh \
     npm install -g hexo-cli
 
 ENV NVM_DIR /usr/local/nvm
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH      $NVM_DIR/v$NODE_VERSION/bin:$PATH
 
 COPY ./blog /home/blog
